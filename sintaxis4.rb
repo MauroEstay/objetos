@@ -2,12 +2,12 @@ propiedades = {nombre: 'Beethoven', raza: 'San Bernardo', color: 'Café'}
 
 class Dog
   def initialize(hash)
-    @nombre = nombre
-    @raza = raza
-    @color = color
+    @nombre = hash[:nombre]
+    @raza = hash[:raza]
+    @color = hash[:color]
   end
   def ladrar
-    puts "#{nombre} está ladrando!"
+    puts "#{@nombre} está ladrando!"
   end
 end
 
